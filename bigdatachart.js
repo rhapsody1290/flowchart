@@ -14,6 +14,9 @@ $(document).ready(function(){
 				return [pt[0], '10%'];
 			}
 		},
+		legend:{
+			data:['Real Time Total Received Bytes','Real Time Total Received Bytes Threshold','Average Total Received BytesThres hold']
+		},
 		title: {
 			left: 'center',
 			text: 'Real Time Total Received Bytes',
@@ -55,75 +58,27 @@ $(document).ready(function(){
 		}],
 		series: [
 			{
-				name:'模拟数据',
+				name:'Real Time Total Received Bytes',
 				type:'line',
 				smooth:true,
 				symbol: 'none',
 				sampling: 'average',
-				itemStyle: {
-					normal: {
-						color: 'rgb(255, 70, 131)'
-					}
-				},
-				areaStyle: {
-					normal: {
-						color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
-							offset: 0,
-							color: 'rgb(255, 158, 68)'
-						}, {
-							offset: 1,
-							color: 'rgb(255, 70, 131)'
-						}])
-					}
-				},
 				data: dataRD
 			},
 			{
-				name:'模拟数据',
+				name:'Real Time Total Received Bytes Threshold',
 				type:'line',
 				smooth:true,
 				symbol: 'none',
 				sampling: 'average',
-				itemStyle: {
-					normal: {
-						color: 'rgb(255, 70, 131)'
-					}
-				},
-				areaStyle: {
-					normal: {
-						color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
-							offset: 0,
-							color: 'rgb(255, 158, 68)'
-						}, {
-							offset: 1,
-							color: 'rgb(255, 70, 131)'
-						}])
-					}
-				},
 				data: dataBT
 			},
 			{
-				name:'模拟数据',
+				name:'Average Total Received BytesThres hold',
 				type:'line',
 				smooth:true,
 				symbol: 'none',
 				sampling: 'average',
-				itemStyle: {
-					normal: {
-						color: 'rgb(255, 70, 131)'
-					}
-				},
-				areaStyle: {
-					normal: {
-						color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
-							offset: 0,
-							color: 'rgb(255, 158, 68)'
-						}, {
-							offset: 1,
-							color: 'rgb(255, 70, 131)'
-						}])
-					}
-				},
 				data: dataEBT
 			}
 		]
@@ -139,6 +94,9 @@ $(document).ready(function(){
 			position: function (pt) {
 				return [pt[0], '10%'];
 			}
+		},
+		legend:{
+			data:['Real Time Total Packet Number','Real Time Total Received Bytes Threshold','Average Total Received BytesThres hold']
 		},
 		title: {
 			left: 'center',
@@ -181,75 +139,27 @@ $(document).ready(function(){
 		}],
 		series: [
 			{
-				name:'模拟数据',
+				name:'Real Time Total Packet Number',
 				type:'line',
 				smooth:true,
 				symbol: 'none',
 				sampling: 'average',
-				itemStyle: {
-					normal: {
-						color: 'rgb(255, 70, 131)'
-					}
-				},
-				areaStyle: {
-					normal: {
-						color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
-							offset: 0,
-							color: 'rgb(255, 158, 68)'
-						}, {
-							offset: 1,
-							color: 'rgb(255, 70, 131)'
-						}])
-					}
-				},
 				data: dataPN
 			},
 			{
-				name:'模拟数据',
+				name:'Real Time Total Received Bytes Threshold',
 				type:'line',
 				smooth:true,
 				symbol: 'none',
 				sampling: 'average',
-				itemStyle: {
-					normal: {
-						color: 'rgb(255, 70, 131)'
-					}
-				},
-				areaStyle: {
-					normal: {
-						color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
-							offset: 0,
-							color: 'rgb(255, 158, 68)'
-						}, {
-							offset: 1,
-							color: 'rgb(255, 70, 131)'
-						}])
-					}
-				},
 				data: dataBT
 			},
 			{
-				name:'模拟数据',
+				name:'Average Total Received BytesThres hold',
 				type:'line',
 				smooth:true,
 				symbol: 'none',
 				sampling: 'average',
-				itemStyle: {
-					normal: {
-						color: 'rgb(255, 70, 131)'
-					}
-				},
-				areaStyle: {
-					normal: {
-						color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
-							offset: 0,
-							color: 'rgb(255, 158, 68)'
-						}, {
-							offset: 1,
-							color: 'rgb(255, 70, 131)'
-						}])
-					}
-				},
 				data: dataEBT
 			}
 		]
