@@ -15,6 +15,8 @@ $(document).ready(function(){
 			}
 		},
 		legend:{
+			x:'right',
+			y:40,
 			data:['Real Time Total Received Bytes','Real Time Total Received Bytes Threshold','Average Total Received BytesThres hold']
 		},
 		title: {
@@ -96,6 +98,8 @@ $(document).ready(function(){
 			}
 		},
 		legend:{
+			x:'right',
+			y:40,
 			data:['Real Time Total Packet Number','Real Time Total Received Bytes Threshold','Average Total Received BytesThres hold']
 		},
 		title: {
