@@ -15,8 +15,9 @@ $(document).ready(function(){
 			}
 		},
 		legend:{
-			x:'right',
-			y:40,
+			x:800,
+			y:80,
+			orient:'vertival',
 			data:['Real Time Total Received Bytes','Real Time Total Received Bytes Threshold','Average Total Received BytesThres hold']
 		},
 		title: {
@@ -98,8 +99,9 @@ $(document).ready(function(){
 			}
 		},
 		legend:{
-			x:'right',
-			y:40,
+			x:800,
+			y:80,
+			orient:'vertival',
 			data:['Real Time Total Packet Number','Real Time Total Received Bytes Threshold','Average Total Received BytesThres hold']
 		},
 		title: {
